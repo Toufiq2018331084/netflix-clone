@@ -1,3 +1,4 @@
+import { ArrowDropDown, Notifications, Search } from "@material-ui/icons"
 import "./navbar.scss"
 
 const Navbar = () => {
@@ -9,12 +10,26 @@ const Navbar = () => {
                 alt=""
                 />
                 <span>Homepage</span>
-                <span>Homepage</span>
-                <span>Homepage</span>
-                <span>Homepage</span>
-                <span>Homepage</span>
+                <span>Series</span>
+                <span>Movies</span>
+                <span>New and Popular</span>
+                <span>My list</span>
             </div>
-            <div className="right"></div>
+            <div className="right">
+              <Search className="icon"/>
+              <span>Kid</span>
+              <Notifications className="icon"/>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeOHMIlSBO59qqOdaevw3AbVHz6w3OkaGZ8A&usqp=CAU" alt=""/>
+              
+              <div className="profile">
+                <ArrowDropDown className="icon"/>
+                <div className="options">
+                  <span>settings</span>
+                  <span>logout</span>
+                </div>
+              </div>
+              
+            </div>
         </div>
         </div>
   )
